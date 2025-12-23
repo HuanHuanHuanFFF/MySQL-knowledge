@@ -1,0 +1,271 @@
+{
+  "main": {
+    "id": "fce2854969dbf6a0",
+    "type": "split",
+    "children": [
+      {
+        "id": "bcf90e3d95269187",
+        "type": "tabs",
+        "dimension": 66.18320610687023,
+        "children": [
+          {
+            "id": "fea6ce2d7bd886fb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "STACKS/stack__sql_basics.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "stack__sql_basics"
+            },
+            "group": "80c3df9fab0f0359"
+          }
+        ]
+      },
+      {
+        "id": "89d543d260928e22",
+        "type": "tabs",
+        "dimension": 33.81679389312977,
+        "children": [
+          {
+            "id": "22109d9c9cf074f3",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "STACKS/stack__sql_basics.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 2,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": false,
+                  "showArrow": true,
+                  "textFadeMultiplier": -0.2,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": false,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.3628873693012102,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "stack__sql_basics 的关系图"
+            },
+            "group": "80c3df9fab0f0359"
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fe4a987e9bd5c76c",
+    "type": "split",
+    "children": [
+      {
+        "id": "21465f7c5d7891a0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ea16b46dfa193bd9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "ff375889ab623068",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "1ec6c68175592339",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "128005607f919354",
+    "type": "split",
+    "children": [
+      {
+        "id": "24ebd4c4e31a0357",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b0b578c5bef2e440",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "未命名.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "未命名 的反向链接列表"
+            }
+          },
+          {
+            "id": "5e021cb7891819df",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "未命名.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "未命名 的出链列表"
+            }
+          },
+          {
+            "id": "0d63392a0fabdab2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "7ad26e0adb6351b4",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "4e592c694ded636f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "未命名.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "未命名 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false
+    }
+  },
+  "active": "fea6ce2d7bd886fb",
+  "lastOpenFiles": [
+    "STACKS/stack__innodb_logs.md",
+    "STACKS/stack__sql_basics.md",
+    "CARDS/order_by_multicolumn_basics.md",
+    "CARDS/date_functions_minimal_set.md",
+    "CARDS/between_datetime_boundaries.md",
+    "CARDS/in_vs_exists_minimal.md",
+    "CARDS/limit_offset_basics.md",
+    "CARDS/distinct_scope_whole_row.md",
+    "CARDS/count_variants_semantics.md",
+    "CARDS/null_handling_basics.md",
+    "CARDS/sql_logical_execution_order.md",
+    "CARDS/from_subquery_alias_required.md",
+    "CARDS/sql_select_clause_skeleton.md",
+    "STACKS/stack__tx_mvcc_lock.md",
+    "STACKS/stack__index_core.md",
+    "STACKS/_template.md",
+    "sources/JavaGuide-mysql/mysql-questions-01.md",
+    "CARDS/group_by_visibility_only_full_group_by.md",
+    "CARDS/order_by_alias_usage.md",
+    "CARDS/alias_scope_where_having.md",
+    "CARDS/where_vs_having_filters.md",
+    "sources/JavaGuide-mysql/a-thousand-lines-of-mysql-study-notes.md",
+    "00_HOME.md",
+    "EXP/_template.md",
+    "CARDS/_template.md",
+    "00_INDEX.md",
+    "assets",
+    "SNIPPETS",
+    "EXP",
+    "STACKS",
+    "CARDS",
+    "未命名",
+    "prompts",
+    "pr",
+    "新建文件夹"
+  ]
+}
