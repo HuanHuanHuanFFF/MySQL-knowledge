@@ -3,7 +3,7 @@ type: mysql-card
 stack: "[[STACKS/stack__tx_mvcc_lock.md]]"
 tags: [mysql, tx]
 related:
-  - "Next: [[CARDS/tx__dirty_read.md]]"
+  - "Next: [[CARDS/tx__what_is_mvcc.md]]"
 evidence: ""
 ---
 
