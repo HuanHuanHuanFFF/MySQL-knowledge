@@ -1,17 +1,15 @@
 ---
 type: mysql-card
-stack: "[[STACKS/stack__sql_basics.md]]"
 tags: [mysql]
+Up: "[[STACKS/stack__index_core]]"
 related:
   - "Next: [[CARDS/index__full_scan_vs_index.md]]"
-evidence: ""
+evidence: "sources/refman-8.0-en.pdf (chapter: 8.3 Overview of the InnoDB Storage Engine)"
 ---
 
 # 什么是索引
 
-**Point**: 索引是按排序结构（B+树等）存放的快速定位数据方式，减少 I/O；主键/唯一/普通索引都建立在列上。
-
-**Why**: 理解索引是查询加速的核心，后续设计与排查都基于此。
-
-Refs:
-- sources/JavaGuide-mysql/a-thousand-lines-of-mysql-study-notes.md
+**Point**: 索引是按排序结构（如 B+Tree）保存键值并指向行的数据组织，用来加速定位而非直接存储数据。  
+**Why**: 明确索引角色，后续理解范围扫描、回表与优化器选择才有基础。  
+**Refs**:
+- sources/refman-8.0-en.pdf (chapter: 8.3 Overview of the InnoDB Storage Engine)

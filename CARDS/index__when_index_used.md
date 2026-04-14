@@ -1,18 +1,16 @@
 ---
 type: mysql-card
-stack: "[[STACKS/stack__sql_basics.md]]"
 tags: [mysql]
+Up: "[[STACKS/stack__index_core]]"
 related:
   - "Prereq: [[CARDS/index__full_scan_vs_index.md]]"
   - "Next: [[CARDS/explain_select_basics.md]]"
-evidence: ""
+evidence: "sources/refman-8.0-en.pdf (chapter: 8.3.1 B-Tree Index Characteristics; 8.2.1 Optimizing Queries with EXPLAIN)"
 ---
 
 # 何时会用到索引
 
-**Point**: 等值/范围条件、前缀 LIKE、ORDER BY/GROUP BY 兼容索引前缀可用索引；函数/类型不匹配/前缀通配常导致索引失效。
-
-**Why**: 编写条件时预判是否走索引，避免落入全表扫描。
-
-Refs:
-- sources/JavaGuide-mysql/a-thousand-lines-of-mysql-study-notes.md
+**Point**: 等值/范围条件、前缀 LIKE、与索引前缀兼容的 ORDER BY/GROUP BY 可利用索引；在索引列上做函数/类型不匹配或前导通配符常导致放弃索引。  
+**Why**: 写条件时预判是否走索引，避免退化为全表扫描。  
+**Refs**:
+- sources/refman-8.0-en.pdf (chapter: 8.3.1 B-Tree Index Characteristics; 8.2.1 Optimizing Queries with EXPLAIN)

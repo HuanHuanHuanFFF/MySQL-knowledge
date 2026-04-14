@@ -1,21 +1,28 @@
 # MySQL Vault Home
 
+## 现在先看什么
+- SQL 基础主线：[[STACKS/stack__sql_basics]] + [[REVIEW/review__stack_sql_basics]]
+- SELECT 执行流程：[[STACKS/stack__select_execution_flow]] + [[REVIEW/review__stack_select_execution_flow]]
+- 索引主线：[[STACKS/stack__index_core]] + [[REVIEW/review__stack_index_core]]
+- 事务隔离级别：[[STACKS/stack__tx_mvcc_lock]] + [[REVIEW/review__stack_tx_mvcc_lock]]
+- 全局目录：[[00_INDEX]]
+
 ## Today / Next Actions
-- [ ] 执行流程栈复盘：[[REVIEW/review__stack_select_execution_flow]]
-- [ ] 扩充 SQL 基础卡片或补充 JOIN/聚合栈
-- [ ] 维护 SOURCES 导航并标注要点：[[SOURCES/00_SOURCES_INDEX]]
-- [ ] 有新资料先跑 distill_cards，再编排入对应 STACK
-- [ ] 如需实验/模板，复制 [[EXP/_template]] / [[SNIPPETS/_template]]
+- [ ] 先刷一轮 SQL 基础与执行流程复习页
+- [ ] 进入索引主线，完成 [[REVIEW/review__stack_index_core]]
+- [ ] 继续把事务主线从“隔离级别”扩到 MVCC / 锁
+- [ ] 新资料先落到 [[sources/00_SOURCES_INDEX]]，再蒸馏进对应 STACK
+- [ ] 如需实验或模板，从 [[EXP/00_EXP_INDEX]] / [[SNIPPETS/00_SNIPPETS_INDEX]] 继续展开
 
 ## 核心入口
-- PROMPTS 使用指南：[[PROMPTS/00_README]]
-- 主要资料目录：[[SOURCES/00_SOURCES_INDEX]]
-- 当前重点 STACKS：[[STACKS/stack__select_execution_flow]], [[STACKS/stack__sql_basics]], [[STACKS/stack__schema_basics]], [[STACKS/stack__join_core]], [[STACKS/stack__group_agg]]
-- 最新 REVIEW：[[REVIEW/review__stack_select_execution_flow]]
+- Prompts：[[prompts/00_README]]
+- Sources：[[sources/00_SOURCES_INDEX]]
+- Reviews：[[REVIEW/review__stack_sql_basics]], [[REVIEW/review__stack_select_execution_flow]], [[REVIEW/review__stack_index_core]], [[REVIEW/review__stack_tx_mvcc_lock]]
+- Core Stacks：[[STACKS/stack__sql_basics]], [[STACKS/stack__schema_basics]], [[STACKS/stack__join_core]], [[STACKS/stack__group_agg]], [[STACKS/stack__select_execution_flow]], [[STACKS/stack__index_core]], [[STACKS/stack__tx_mvcc_lock]]
 
 ## 最小工作流
-1. 选资料：定位 SOURCES 中的文件或章节。
-2. 产出 CARD：用 distill_from_local_sources prompt，按模板写到 CARDS/。
-3. 入 STACK：把卡片挂到对应 STACK 的 Cards 与 Read；必要时新增 STACK。
-4. （可选）实验/模板：如需验证或模板，复制 [[EXP/_template]] / [[SNIPPETS/_template]]。
-5. 生成 REVIEW：用 make_review_page prompt 生成 REVIEW 页面，便于回顾。
+1. 选资料：从 [[sources/00_SOURCES_INDEX]] 找到要读的本地来源。
+2. 产出 CARD：参照 [[CARDS/_template]]，用 [[prompts/00_README]] 里的工作流蒸馏短卡。
+3. 入 STACK：把卡片挂到对应的 `Cards` 和 `Read`，保持一页可读。
+4. 可选补充：需要实验或 SQL 模板时，用 [[EXP/00_EXP_INDEX]] / [[SNIPPETS/00_SNIPPETS_INDEX]]。
+5. 生成 REVIEW：为成型主线补对应复习页，例如 [[REVIEW/review__stack_index_core]]，先复习再扩展。
