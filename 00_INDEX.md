@@ -47,5 +47,6 @@
 - [[SNIPPETS/_template]] — SQL 模板
 
 ## Workspaces
+- [[QA/00_QA_INDEX]] — 问题驱动阅读入口
 - [[EXP/00_EXP_INDEX]] — 实验入口页
 - [[SNIPPETS/00_SNIPPETS_INDEX]] — 模板入口页

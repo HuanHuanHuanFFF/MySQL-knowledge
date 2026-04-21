@@ -20,6 +20,7 @@
 ## 核心入口
 - Prompts：[[prompts/00_README]]
 - Sources：[[sources/00_SOURCES_INDEX]]
+- Q&A：[[QA/00_QA_INDEX]]
 - Reviews：[[REVIEW/review__stack_sql_basics]], [[REVIEW/review__stack_schema_basics]], [[REVIEW/review__stack_join_core]], [[REVIEW/review__stack_group_agg]], [[REVIEW/review__stack_select_execution_flow]], [[REVIEW/review__stack_index_core]], [[REVIEW/review__stack_tx_mvcc_lock]]
 - Core Stacks：[[STACKS/stack__sql_basics]], [[STACKS/stack__schema_basics]], [[STACKS/stack__join_core]], [[STACKS/stack__group_agg]], [[STACKS/stack__select_execution_flow]], [[STACKS/stack__index_core]], [[STACKS/stack__tx_mvcc_lock]]
 

@@ -11,6 +11,8 @@ Use these prompts with Cursor/Codex to batch-generate MySQL cards, stacks, exper
 ## Prompt intents
 - distill_cards: turn sources into short atomic cards; auto assign to a STACK; add only necessary related links.
 - build_stack_from_cards: reorder existing cards into a STACK with directory bullets plus embed sequence.
+- rebuild_problem_driven_stack: refactor an existing STACK into a question-driven reading path, and use `QA/` for multi-card guided answers on mechanism/tradeoff topics like tx, index, and execution flow.
+- understanding_first_learning: keep explanations aligned with a problem-first, minimal-model, cause-and-effect learning style.
 - make_experiments: derive 1-3 reproducible EXP items for key claims.
 - make_snippets: derive copy/paste SQL templates from cards or problems.
 - build_sources_nav: create/maintain SOURCES navigation with links and key bullets only.

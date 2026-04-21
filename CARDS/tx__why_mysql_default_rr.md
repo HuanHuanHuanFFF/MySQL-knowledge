@@ -9,11 +9,11 @@ related:
 evidence: ""
 ---
 
-# 为什么 InnoDB 默认是 Repeatable Read
+# 为什么默认不是 RC，也不是 Serializable？
 
-**Point**: 可把 InnoDB 默认选 RR 理解为一种工程折中：比 RC 给更稳定的事务内视图，又不像 Serializable 那样把普通读大面积推向强锁。
+**Point**: 可把默认选 RR 理解为一种工程折中：比 RC 给更稳定的事务内视图，又不像 Serializable 那样把普通读大面积推向强锁。
 
-**Why**: 这是基于官方默认值与 InnoDB 一致性读设计的工程解读。RC 一致性更弱；Serializable 更保守；RR 则试图把“读稳定性”和“普通读并发”放在一个更均衡的位置。
+**Why**: RC 更强调并发，但事务内读稳定性更弱；Serializable 更稳，但更保守；RR 试图把“读稳定性”和“普通读并发”放在一个更均衡的位置。
 
 Example: 读多写少场景里，普通 `SELECT` 仍可走快照读；但写冲突高时，RR 又会比 RC 承担更保守的锁代价。
 

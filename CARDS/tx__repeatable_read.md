@@ -9,11 +9,11 @@ related:
 evidence: ""
 ---
 
-# Repeatable Read
+# 为什么 RR 能让同一事务里的读取更稳定？
 
-**Point**: 在 InnoDB 里，Repeatable Read 会让事务内一致性读复用同一 Read View，所以重复读取同一行时结果更稳定，能防脏读和不可重复读。
+**Point**: 因为在 InnoDB 里，Repeatable Read 会让事务内一致性读复用同一一致性读视图，所以重复读取同一行时结果更稳定。
 
-**Why**: 它比 RC 多拿到一层“事务内快照稳定性”；普通读主要靠 MVCC，不必把所有 `SELECT` 都做成重锁，当前读再配合更保守的锁语义。
+**Why**: 它比 RC 多拿到一层“事务内快照稳定性”；普通读主要靠 MVCC，不必把所有 `SELECT` 都变成重锁，但代价是写冲突时会更保守。
 
 Example: 同一事务里反复读取同一行，除非是自己改的，否则结果应保持一致。
 

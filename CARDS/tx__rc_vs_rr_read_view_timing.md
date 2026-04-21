@@ -9,11 +9,11 @@ related:
 evidence: ""
 ---
 
-# RC vs RR 的 Read View 时机
+# 为什么 RC 两次 SELECT 会变，而 RR 更稳定？
 
-**Point**: RC 和 RR 的关键实现差别，是一致性读的 Read View 生成时机不同：RC 每次 `SELECT` 前生成新视图，RR 在事务第一次一致性读时固定。
+**Point**: 因为 RC 和 RR 的关键实现差别，就是一致性读视图（Read View）的生成时机不同：RC 每次 `SELECT` 前刷新，RR 在第一次一致性读时固定。
 
-**Why**: 所以 RC 能保证“不读未提交”，但结果会随着后续提交前进；RR 把事务内视图钉住，才换来可重复读。
+**Why**: RC 只保证“不读未提交”，不保证“整段事务都看同一版”；RR 把事务内视图钉住，所以才换来更稳定的重复读。
 
 Example: 同一事务两次普通 `SELECT`，RC 可能读到两版已提交数据，RR 通常读到同一版。
 

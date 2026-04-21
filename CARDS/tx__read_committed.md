@@ -9,11 +9,11 @@ related:
 evidence: ""
 ---
 
-# Read Committed
+# 只看已提交版本，为什么还会两次读不一样？
 
-**Point**: Read Committed 只让已提交版本可见；在 InnoDB 里，普通一致性读通常是“每次 `SELECT` 一张新 Read View”，所以能防脏读但不能保证事务内结果不变。
+**Point**: 因为 Read Committed 虽然只让已提交版本可见，但在 InnoDB 里，普通一致性读通常每次 `SELECT` 都会拿新的 Read View。
 
-**Why**: 它把“提交才算数”当成底线，因此不会读到脏数据；但视图会随着新的提交向前推进，所以同一事务重复查询仍可能看到新值。
+**Why**: 它把“提交才算数”当成底线，所以能防脏读；但视图会随着新的提交往前走，所以同一事务里两次查询仍可能不同。
 
 Example: 第一次 `SELECT` 看到旧值；别的事务提交后，第二次 `SELECT` 看到新值。
 

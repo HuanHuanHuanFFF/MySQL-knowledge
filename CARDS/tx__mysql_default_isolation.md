@@ -8,7 +8,7 @@ related:
 evidence: ""
 ---
 
-# MySQL / InnoDB 默认隔离级别
+# 默认隔离级别到底是什么？
 
 **Point**: MySQL 的 InnoDB 默认隔离级别是 Repeatable Read。
 
