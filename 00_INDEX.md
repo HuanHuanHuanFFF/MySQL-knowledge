@@ -15,7 +15,7 @@
 - [[STACKS/stack__index_core]] — 索引概念、使用条件、排查路径
 
 ### 事务
-- [[STACKS/stack__tx_mvcc_lock]] — 事务、隔离级别、后续 MVCC / 锁入口
+- [[STACKS/stack__tx_mvcc_lock]] — 事务、隔离级别、MVCC / 快照读 / Read View 基础
 
 ## Reviews
 - [[REVIEW/review__stack_sql_basics]] — SQL 基础复习
@@ -24,7 +24,7 @@
 - [[REVIEW/review__stack_group_agg]] — 聚合复习
 - [[REVIEW/review__stack_select_execution_flow]] — SELECT 执行流程复习
 - [[REVIEW/review__stack_index_core]] — 索引主线复习
-- [[REVIEW/review__stack_tx_mvcc_lock]] — 事务隔离级别复习
+- [[REVIEW/review__stack_tx_mvcc_lock]] — 事务隔离级别、MVCC 与设计权衡复习
 
 ## Prompts
 - [[prompts/00_README]] — 当前 prompt 工作流总说明
