@@ -6,7 +6,7 @@
       {
         "id": "0d8a6ac99636d09b",
         "type": "tabs",
-        "dimension": 55.53857906799083,
+        "dimension": 68.27133479212254,
         "children": [
           {
             "id": "576f8b4519a589c3",
@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_INDEX.md",
+                "file": "STACKS/stack__tx_mvcc_lock.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_INDEX"
+              "title": "stack__tx_mvcc_lock"
             }
           },
           {
@@ -41,7 +41,7 @@
       {
         "id": "aebd2ca0756155f3",
         "type": "tabs",
-        "dimension": 44.46142093200917,
+        "dimension": 31.72866520787746,
         "children": [
           {
             "id": "e1320a5aac7f6113",
@@ -49,7 +49,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00_INDEX.md",
+                "file": "STACKS/stack__tx_mvcc_lock.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -77,7 +77,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "00_INDEX 的关系图"
+              "title": "stack__tx_mvcc_lock 的关系图"
             }
           }
         ]
@@ -137,7 +137,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 237.5
   },
   "right": {
     "id": "128005607f919354",
@@ -279,34 +279,35 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ea16b46dfa193bd9",
+  "active": "576f8b4519a589c3",
   "lastOpenFiles": [
-    "SNIPPETS/00_SNIPPETS_INDEX.md",
-    "SNIPPETS/_template.md",
-    "EXP/_template.md",
-    "REVIEW/review__stack_group_agg.md",
-    "prompts/PROMPTS 使用说明（给我自己看）.md",
-    "REVIEW/review__stack_tx_mvcc_lock.md",
-    "EXP/00_EXP_INDEX.md",
-    "REVIEW/review__stack_index_core.md",
-    "STACKS/stack__tx_mvcc_lock.md",
-    "CARDS/tx__isolation_level_summary.md",
-    "STACKS/stack__join_core.md",
-    "STACKS/stack__schema_basics.md",
     "STACKS/stack__sql_basics.md",
-    "STACKS/stack__select_execution_flow.md",
+    "STACKS/stack__tx_mvcc_lock.md",
+    "prompts/understanding_first_learning.prompt.md",
+    "QA/tx__how_to_tell_snapshot_vs_current_read.md",
     "CARDS/tx__mysql_default_isolation.md",
-    "CARDS/tx__serializable.md",
-    "CARDS/tx__repeatable_read.md",
+    "QA/tx__why_return_to_isolation_summary.md",
+    "QA/tx__why_rc_and_rr_feel_different.md",
+    "QA/tx__why_plain_select_should_not_lock.md",
+    "QA/tx__why_not_default_rc_or_serializable.md",
+    "QA/_template.md",
+    "QA/00_QA_INDEX.md",
+    "QA",
+    "CARDS/tx__what_is_mvcc.md",
     "CARDS/tx__read_committed.md",
     "CARDS/tx__read_uncommitted.md",
-    "CARDS/tx__phantom_read.md",
-    "CARDS/tx__non_repeatable_read.md",
-    "CARDS/tx__dirty_read.md",
+    "CARDS/tx__serializable.md",
     "CARDS/tx__what_is_isolation_level.md",
-    "STACKS/stack__index_core.md",
-    "STACKS/stack__group_agg.md",
-    "CARDS/schema_index_minimal.md",
+    "CARDS/tx__snapshot_read_vs_current_read.md",
+    "CARDS/window__pitfalls.md",
+    "CARDS/window__row_number_rank_dense_rank.md",
+    "CARDS/window__window_vs_subquery.md",
+    "CARDS/xxx.md",
+    "CARDS/groupby_semantics.md",
+    "CARDS/date_functions_common.md",
+    "CARDS/case_when_conditional_mapping.md",
+    "CARDS/_template.md",
+    "CARDS/tx__question_default_rr_tradeoff.md",
     "sources/refman-8.0-en.pdf",
     "py.bat",
     "py.txt",
@@ -315,7 +316,6 @@
     "sources/xiaolincoding__mysql__select_execution_flow.html",
     "assets",
     "SNIPPETS",
-    "EXP",
-    "STACKS"
+    "EXP"
   ]
 }
