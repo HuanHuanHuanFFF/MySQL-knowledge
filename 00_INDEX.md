@@ -20,6 +20,7 @@
 
 ### 事务
 - [[STACKS/stack__tx_mvcc_lock]] — 事务、隔离级别、MVCC / 快照读 / Read View 基础
+- [[STACKS/stack__tx_mvcc_impl]] — MVCC 实现链：undo、版本链、Read View、可见性判断、RC / RR 分叉
 
 ## Reviews
 - [[REVIEW/review__stack_sql_basics]] — SQL 基础复习
@@ -29,6 +30,7 @@
 - [[REVIEW/review__stack_select_execution_flow]] — SELECT 执行流程复习
 - [[REVIEW/review__stack_index_core]] — 索引主线复习
 - [[REVIEW/review__stack_tx_mvcc_lock]] — 事务隔离级别、MVCC 与设计权衡复习
+- [[REVIEW/review__stack_tx_mvcc_impl]] — MVCC 实现链复习
 
 ## Prompts
 - [[prompts/init_mysql_distill_leader.prompt]] — 接管当前仓库，盘点进度并产出下游任务 prompt
