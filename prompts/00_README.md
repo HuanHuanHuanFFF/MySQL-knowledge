@@ -9,6 +9,8 @@ Use these prompts with Cursor/Codex to batch-generate MySQL cards, stacks, exper
 - Avoid fully connected meshes; prefer tree/chain structures; mark relation type in each `related` item.
 
 ## Prompt intents
+- init_mysql_distill_leader: initialize a planning/lead agent that audits current distillation progress, sets priorities, and emits worker prompts with explicit skill, prompt, and template usage.
+- mysql_distill_doctrine: repository-wide doctrine for long-term MySQL distillation, with problem-first structure, minimal models, and clear boundaries between CARD / STACK / QA / REVIEW.
 - distill_cards: turn sources into short atomic cards; auto assign to a STACK; add only necessary related links.
 - build_stack_from_cards: reorder existing cards into a STACK with directory bullets plus embed sequence.
 - rebuild_problem_driven_stack: refactor an existing STACK into a question-driven reading path, and use `QA/` for multi-card guided answers on mechanism/tradeoff topics like tx, index, and execution flow.

@@ -1,5 +1,9 @@
 # MySQL Vault Index
 
+## Control
+- [[00_LEADER]] — 当前推进判断、优先级与下游任务 prompt
+- [[00_HOME]] — 入口页与当前 Next Actions
+
 ## Stacks
 
 ### 基础
@@ -27,6 +31,8 @@
 - [[REVIEW/review__stack_tx_mvcc_lock]] — 事务隔离级别、MVCC 与设计权衡复习
 
 ## Prompts
+- [[prompts/init_mysql_distill_leader.prompt]] — 接管当前仓库，盘点进度并产出下游任务 prompt
+- [[prompts/mysql_distill_doctrine.prompt]] — 当前仓库的蒸馏总则
 - [[prompts/00_README]] — 当前 prompt 工作流总说明
 - [[prompts/build_sources_nav.prompt]] — 把资料整理成 sources 导航页
 - [[prompts/build_stack_from_cards.prompt]] — 用现有卡片重编一个 stack
@@ -47,6 +53,7 @@
 - [[SNIPPETS/_template]] — SQL 模板
 
 ## Workspaces
+- [[00_LEADER]] — 当前推进判断、优先级与下游任务 prompt
 - [[QA/00_QA_INDEX]] — 问题驱动阅读入口
 - [[EXP/00_EXP_INDEX]] — 实验入口页
 - [[SNIPPETS/00_SNIPPETS_INDEX]] — 模板入口页

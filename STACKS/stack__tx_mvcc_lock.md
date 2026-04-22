@@ -25,6 +25,9 @@ Scope: 不先背名词，而是先追几个真实问题，再顺着设计目标�
 - [[CARDS/tx__why_mysql_default_rr.md]]
 - [[CARDS/tx__isolation_level_summary.md]]
 
+## Go Deeper
+- [[STACKS/stack__tx_mvcc_impl.md]]
+
 ## Q&A / Start Here
 ![[QA/tx__why_plain_select_should_not_lock]]
 ![[QA/tx__how_to_tell_snapshot_vs_current_read]]
@@ -58,3 +61,6 @@ Scope: 不先背名词，而是先追几个真实问题，再顺着设计目标�
 ## Evidence
 - [[EXP/...]] (optional)
 - [[SNIPPETS/...]] (optional)
+
+## Continue
+- [[STACKS/stack__tx_mvcc_impl.md]]
