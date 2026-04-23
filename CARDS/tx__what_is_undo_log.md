@@ -20,7 +20,7 @@ Notes:
 - 这里的“回滚”默认指事务 `ROLLBACK`。
 - 一旦事务已经 `COMMIT`，就不能再靠普通 `ROLLBACK` 撤销这个事务。
 - `undo log` 属于运行期的事务 / MVCC 支撑信息，不是像 `binlog` 那样面向长期归档或时间点恢复的日志。
-- `undo log` 后续什么时候能被清理，要看它是不是还被回滚或一致性读需要；这部分另见 `tx__purge_and_undo_cleanup_minimal`。
+- `undo log` 后续什么时候能被清理，要看它是不是还被回滚或一致性读需要；这部分另见 [[tx__purge_and_undo_cleanup_minimal]]。
 - 后面它还能给 MVCC 提供旧版本，这是第二层用途。
 
 Example: 一次 `update` 改了某行后，如果事务回滚，数据库就要借 `undo log` 回到改之前的状态；如果别的事务做快照读还需要旧值，也可能从 `undo log` 里把旧版本重建出来。
