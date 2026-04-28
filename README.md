@@ -74,3 +74,20 @@ Current topics include:
 ├── REVIEW/     # 复习页 / Review notes
 ├── STACKS/     # 主题知识栈 / Topic stacks
 └── sources/    # 资料来源与原始材料 / Sources and references
+```
+
+---
+
+## 资料来源 / Sources & Acknowledgements
+
+本仓库以 MySQL 官方文档及其他公开资料为主要参考，在整理过程中也参考了 JavaGuide、小林 coding 等优质学习资料。相关内容已经结合个人学习笔记、面试复盘与 AI Agent 辅助整理进行重构。
+
+This repository mainly refers to MySQL official documentation and other public resources. JavaGuide, Xiaolin Coding, and other high-quality learning materials were also referenced during the organization process. The content has been reorganized with personal study notes, interview reviews, and AI-agent-assisted distillation.
+
+---
+
+## License
+
+This repository is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+
+See [LICENSE](LICENSE) for details.
