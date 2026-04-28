@@ -12,3 +12,6 @@
 - [[QA/tx__how_to_tell_snapshot_vs_current_read]] — 怎么区分快照读和当前读
 - [[QA/tx__why_rc_and_rr_feel_different]] — 为什么 RC 两次 SELECT 会变而 RR 更稳定
 - [[QA/tx__why_not_default_rc_or_serializable]] — 为什么默认不是 RC，也不是 Serializable
+- [[QA/index__why_index_exists_but_not_used]] — 为什么明明建了索引却没走
+- [[QA/index__when_secondary_index_needs_back_to_table]] — 二级索引什么时候需要回表
+- [[QA/index__how_to_diagnose_slow_sql_index_issue]] — 怎么排查慢 SQL 是不是索引问题

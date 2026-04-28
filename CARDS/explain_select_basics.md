@@ -9,7 +9,7 @@ evidence: "sources/refman-8.0-en.pdf (chapter: 8.8.1 Using EXPLAIN)"
 
 # EXPLAIN 基础字段
 
-**Point**: `EXPLAIN SELECT ...` 关注 `type`、`key`、`rows`、`Extra` 判断是否走索引、是否 filesort/temp。  
-**Why**: 优化前先用计划评估访问路径，避免盲目改索引。  
+**Point**: `EXPLAIN SELECT ...` 用来先看 MySQL 打算怎么访问数据，重点关注 `type`、`key`、`rows`、`Extra`，判断有没有走对索引。  
+**Why**: 慢 SQL 不能靠猜。优化前先看执行计划，才能分清是没走索引、走了错索引、回表太多，还是排序/临时表代价太高。  
 **Refs**:
 - sources/refman-8.0-en.pdf (chapter: 8.8.1 Using EXPLAIN)

@@ -12,7 +12,7 @@ evidence: ""
 
 **Point**: <concise single idea>
 
-**Why**: <impact or when it matters>
+**Why**: <answer why this thing is needed or why it is designed this way; tie it to the real query/workload/problem it solves; do not write "helps later understanding", "used for learning", or other filler>
 
 SQL/Notes:
 ```sql

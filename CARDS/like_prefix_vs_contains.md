@@ -10,7 +10,7 @@ evidence: "sources/refman-8.0-en.pdf (chapter: 8.3.1 B-Tree Index Characteristic
 
 # LIKE 前缀 vs 包含
 
-**Point**: 前缀模式如 `col LIKE 'abc%'` 可用 B-Tree 索引；包含 `%abc%` 因前导通配符通常无法利用索引，易全表扫描。  
-**Why**: 设计查询时优先前缀匹配或改用倒排/全文索引，避免无谓扫描。  
+**Point**: 前缀模式如 `col LIKE 'abc%'` 通常能用 B-Tree 索引；包含 `%abc%` 因前导通配符通常无法利用索引，容易退化成全表扫描。  
+**Why**: B+Tree 利用的是“按开头有序排列”的能力。只有模式前缀确定时，数据库才能把条件转成一个可定位的区间；前导通配符会让起点不确定，树就没法直接定位。  
 **Refs**:
 - sources/refman-8.0-en.pdf (chapter: 8.3.1 B-Tree Index Characteristics)
