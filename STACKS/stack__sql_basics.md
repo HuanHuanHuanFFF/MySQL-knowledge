@@ -38,7 +38,7 @@ Scope: Core SELECT/CRUD patterns, predicates, joins, and execution order.
 
 ### 性能入门（索引）
 - [[CARDS/index__what_is_index.md]]
-- [[CARDS/index__full_scan_vs_index.md]]
+- [[CARDS/index__full_scan_vs_index_scan.md]]
 - [[CARDS/index__when_index_used.md]]
 - [[CARDS/schema_index_minimal.md]]
 - [[CARDS/index_create_drop_basics.md]]
@@ -84,7 +84,7 @@ Scope: Core SELECT/CRUD patterns, predicates, joins, and execution order.
 
 #### 性能入门（索引）
 ![[CARDS/index__what_is_index.md]]
-![[CARDS/index__full_scan_vs_index.md]]
+![[CARDS/index__full_scan_vs_index_scan.md]]
 ![[CARDS/index__when_index_used.md]]
 ![[CARDS/schema_index_minimal.md]]
 ![[CARDS/index_create_drop_basics.md]]

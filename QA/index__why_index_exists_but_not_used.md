@@ -8,21 +8,19 @@ topic: index_not_used
 # 为什么明明建了索引却没走？
 
 ## Point
-- 这题本质在问：索引存在，不等于这条 SQL 的访问路径一定适合用它。
+- 索引存在，不等于这条 SQL 的写法就一定能利用它。
 
 ## Why
-- 优化器会按条件写法、联合索引前缀、类型/函数转换、统计信息和成本来选计划。
-- 所以“没走索引”常见原因不是索引不存在，而是条件不满足索引可用规则，或优化器估算觉得用它不划算。
+- 这一页先抓最常见原因：查询条件没有用上索引的有序性。
+- 比如联合索引没有从左往右连续使用，或者 `LIKE` 前面就用了通配符，数据库就很难靠这份索引直接定位。
 
 ## Read Through
-![[CARDS/index__when_index_used]]
 ![[CARDS/index__leftmost_prefix]]
-![[CARDS/cast_conversion_index_risk]]
-![[CARDS/index__cardinality_statistics]]
+![[CARDS/like_prefix_vs_contains]]
+![[CARDS/explain_select_basics]]
 
 ## Takeaway
-- 先查 SQL 写法是否让索引可用，再看统计信息和优化器成本判断；不要只盯“有没有建索引”。
+- 先查 SQL 写法有没有真的利用索引的有序性，不要只盯“有没有建索引”。
 
 ## Refs
-- sources/refman-8.0-en.pdf (chapter: 8.3.1 B-Tree Index Characteristics; 8.8.1 Using EXPLAIN; 8.9.6 Index Statistics)
-- sources/JavaGuide-mysql/index-invalidation-caused-by-implicit-conversion.md
+- sources/refman-8.0-en.pdf (chapter: 8.3.1 B-Tree Index Characteristics; 8.8.1 Using EXPLAIN)

@@ -3,7 +3,7 @@ type: mysql-card
 tags: [mysql]
 Up: "[[STACKS/stack__index_core]]"
 related:
-  - "Prereq: [[CARDS/index__full_scan_vs_index.md]]"
+  - "Prereq: [[CARDS/index__full_scan_vs_index_scan.md]]"
   - "Next: [[CARDS/explain_select_basics.md]]"
 evidence: "sources/refman-8.0-en.pdf (chapter: 8.3.1 B-Tree Index Characteristics; 8.2.1 Optimizing Queries with EXPLAIN)"
 ---

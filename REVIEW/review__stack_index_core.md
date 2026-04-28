@@ -19,7 +19,7 @@ A：
 - 差别核心是访问行数和访问路径。
 </details>
 
-See: [[CARDS/index__full_scan_vs_index]]
+See: [[CARDS/index__full_scan_vs_index_scan]]
 
 ---
 

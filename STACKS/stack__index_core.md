@@ -5,9 +5,9 @@ Scope: 索引概念、设计、使用与排查的主线学习路径。
 ## Cards
 - [[CARDS/index__what_is_index]]
 - [[CARDS/index__btree_basics]]
-- [[CARDS/index__full_scan_vs_index]]
 - [[CARDS/index__clustered_vs_secondary]]
 - [[CARDS/index__covering_index_vs_back_to_table]]
+- [[CARDS/index__full_scan_vs_index_scan]]
 - [[CARDS/index__leftmost_prefix]]
 - [[CARDS/like_prefix_vs_contains]]
 - [[CARDS/index__write_cost]]
@@ -18,9 +18,9 @@ Scope: 索引概念、设计、使用与排查的主线学习路径。
 ## Read (embed)
 ![[CARDS/index__what_is_index]]
 ![[CARDS/index__btree_basics]]
-![[CARDS/index__full_scan_vs_index]]
 ![[CARDS/index__clustered_vs_secondary]]
 ![[CARDS/index__covering_index_vs_back_to_table]]
+![[CARDS/index__full_scan_vs_index_scan]]
 ![[CARDS/index__leftmost_prefix]]
 ![[CARDS/like_prefix_vs_contains]]
 ![[CARDS/index__write_cost]]
