@@ -9,59 +9,45 @@
         "dimension": 68.27133479212254,
         "children": [
           {
-            "id": "33a53c279b3075fa",
+            "id": "2c5891370df0844a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "REVIEW/review__stack_tx_mvcc_impl.md",
+                "file": "STACKS/stack__index_core.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "review__stack_tx_mvcc_impl"
+              "title": "stack__index_core"
             }
           },
           {
-            "id": "09411cc940f786b3",
+            "id": "d0f0cfd3b7502ca3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CARDS/tx__read_view_visibility_rules.md",
+                "file": "CARDS/index__what_is_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tx__read_view_visibility_rules"
+              "title": "index__what_is_index"
             }
           },
           {
-            "id": "c25d6f66831fc147",
+            "id": "c47caf3949016b95",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CARDS/tx__read_view_fields_minimal.md",
+                "file": "STACKS/stack__tx_mvcc_lock.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tx__read_view_fields_minimal"
-            }
-          },
-          {
-            "id": "e6fca9db6477e16b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sources/00_SOURCES_INDEX.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "00_SOURCES_INDEX"
+              "title": "stack__tx_mvcc_lock"
             }
           }
         ]
@@ -77,7 +63,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "REVIEW/review__stack_tx_mvcc_impl.md",
+                "file": "STACKS/stack__index_core.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -100,12 +86,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.18462326225857972,
+                  "scale": 0.1316872427983525,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "review__stack_tx_mvcc_impl 的关系图"
+              "title": "stack__index_core 的关系图"
             }
           }
         ]
@@ -307,34 +293,35 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "33a53c279b3075fa",
+  "active": "e1320a5aac7f6113",
   "lastOpenFiles": [
+    "STACKS/stack__join_core.md",
+    "STACKS/stack__index_core.md",
+    "CARDS/index__what_is_index.md",
+    "CARDS/index__full_scan_vs_index_scan.md",
+    "STACKS/stack__tx_mvcc_lock.md",
+    "CARDS/_template.md",
+    "STACKS/stack__schema_basics.md",
+    "STACKS/stack__select_execution_flow.md",
+    "00_TODO.md",
+    "STACKS/stack__tx_mvcc_impl.md",
+    "STACKS/stack__sql_basics.md",
+    "QA/00_QA_INDEX.md",
+    "CARDS/tx__purge_and_undo_cleanup_minimal.md",
+    "CARDS/tx__what_is_undo_log.md",
+    "README.md",
+    "QA/index__how_to_diagnose_slow_sql_index_issue.md",
+    "QA/index__when_secondary_index_needs_back_to_table.md",
+    "QA/index__why_index_exists_but_not_used.md",
+    "LICENSE",
+    "sources/00_SOURCES_INDEX.md",
+    "README.md.md",
+    "CARDS/tx__read_view_fields_minimal.md",
     "CARDS/tx__read_view_visibility_rules.md",
     "REVIEW/review__stack_tx_mvcc_impl.md",
-    "CARDS/tx__read_view_fields_minimal.md",
-    "sources/00_SOURCES_INDEX.md",
     "CARDS/tx__what_read_view_does_in_mvcc.md",
     "CARDS/tx__insert_undo_vs_update_undo_split.md",
     "CARDS/tx__mvcc_two_questions_before_read_view.md",
-    "REVIEW/review__stack_tx_mvcc_lock.md",
-    "STACKS/stack__tx_mvcc_impl.md",
-    "STACKS/stack__tx_mvcc_lock.md",
-    "QA/00_QA_INDEX.md",
-    "CARDS/tx__mvcc_hidden_columns_minimal.md",
-    "STACKS/stack__select_execution_flow.md",
-    "STACKS/stack__sql_basics.md",
-    "CARDS/tx__rollback_vs_recovery_boundary_minimal.md",
-    "CARDS/tx__self_written_version_visibility.md",
-    "CARDS/tx__delete_on_version_chain.md",
-    "CARDS/tx__version_chain_minimal.md",
-    "CARDS/tx__undo_log_role_for_mvcc.md",
-    "CARDS/tx__what_is_undo_log.md",
-    "CARDS/tx__rc_rr_same_chain_different_result.md",
-    "CARDS/tx__undo_log_version_chain_minimal.md",
-    "sources/reading_queue.md",
-    "sources/javaguide_map.md",
-    "sources/mysql_manual_links.md",
-    "00_INDEX.md",
     "QA",
     "sources/refman-8.0-en.pdf",
     "py.bat",
@@ -343,7 +330,6 @@
     "REVIEW",
     "sources/xiaolincoding__mysql__select_execution_flow.html",
     "assets",
-    "SNIPPETS",
-    "EXP"
+    "SNIPPETS"
   ]
 }
