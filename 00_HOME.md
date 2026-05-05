@@ -1,36 +1,33 @@
 # MySQL Vault Home
 
 ## 现在先看什么
-- 当前接管页：[[00_LEADER]]
-- SQL 基础主线：[[STACKS/stack__sql_basics]] + [[REVIEW/review__stack_sql_basics]]
-- Schema / Constraints：[[STACKS/stack__schema_basics]] + [[REVIEW/review__stack_schema_basics]]
-- JOIN 与聚合：[[STACKS/stack__join_core]] + [[REVIEW/review__stack_join_core]]，[[STACKS/stack__group_agg]] + [[REVIEW/review__stack_group_agg]]
-- SELECT 执行流程：[[STACKS/stack__select_execution_flow]] + [[REVIEW/review__stack_select_execution_flow]]
-- 索引主线：[[STACKS/stack__index_core]] + [[REVIEW/review__stack_index_core]]
-- 事务 / MVCC / Locks：[[STACKS/stack__tx_mvcc_lock]] + [[REVIEW/review__stack_tx_mvcc_lock]]
-- MVCC 实现线：[[STACKS/stack__tx_mvcc_impl]] + [[REVIEW/review__stack_tx_mvcc_impl]]
-- 全局目录：[[00_INDEX]]
+- 总目录：[[00_INDEX]]
+- 当前进度：[[00_LEADER]]
+- Prompt 入口：[[prompts/00_README]]
+- Sources 入口：[[sources/00_SOURCES_INDEX]]
+- Q&A 入口：[[QA/00_QA_INDEX]]
 
-## Today / Next Actions
-- [x] 已补 [[sources/00_SOURCES_INDEX]]，并补出 [[sources/mysql_manual_links]]、[[sources/javaguide_map]]、[[sources/reading_queue]]
-- [x] 已补 [[STACKS/stack__tx_mvcc_impl]] 与 [[REVIEW/review__stack_tx_mvcc_impl]]
-- [ ] 给 [[STACKS/stack__index_core]] 增加 2~3 个 QA 入口，补齐“为什么这样设计 / 怎么排查”
-- [ ] 重修 [[STACKS/stack__select_execution_flow]] 的问题驱动入口，并修复 [[REVIEW/review__stack_select_execution_flow]]
-- [ ] 如继续下钻事务线，优先补“当前读 / Next-Key Lock 与 MVCC 实现链的边界”，或 `purge / 历史版本回收`
-- [ ] 需要具体任务 prompt 时，先看 [[00_LEADER]]
-- [ ] 如需实验或模板，从 [[EXP/00_EXP_INDEX]] / [[SNIPPETS/00_SNIPPETS_INDEX]] 继续展开
+## Next
+- 先补 [[STACKS/stack__btree_deep_dive]] 的 review。
+- 再考虑是否开 [[STACKS/stack__index_core]] 之后的 index advanced。
+- 如继续事务线，优先收紧“当前读 / 锁边界”，不要散开到日志总论。
+- 做任何新增蒸馏前，先从 [[00_INDEX]] 确认已有入口和真实文件。
 
-## 核心入口
-- Leader：[[00_LEADER]]
-- Prompts：[[prompts/00_README]]
-- Sources：[[sources/00_SOURCES_INDEX]]
-- Q&A：[[QA/00_QA_INDEX]]
-- Reviews：[[REVIEW/review__stack_sql_basics]], [[REVIEW/review__stack_schema_basics]], [[REVIEW/review__stack_join_core]], [[REVIEW/review__stack_group_agg]], [[REVIEW/review__stack_select_execution_flow]], [[REVIEW/review__stack_index_core]], [[REVIEW/review__stack_tx_mvcc_lock]], [[REVIEW/review__stack_tx_mvcc_impl]]
-- Core Stacks：[[STACKS/stack__sql_basics]], [[STACKS/stack__schema_basics]], [[STACKS/stack__join_core]], [[STACKS/stack__group_agg]], [[STACKS/stack__select_execution_flow]], [[STACKS/stack__index_core]], [[STACKS/stack__tx_mvcc_lock]], [[STACKS/stack__tx_mvcc_impl]]
+## 当前核心 Stacks
+- 基础线：[[STACKS/stack__sql_basics]], [[STACKS/stack__schema_basics]], [[STACKS/stack__join_core]], [[STACKS/stack__group_agg]]
+- 执行流程线：[[STACKS/stack__select_execution_flow]]
+- 索引线：[[STACKS/stack__index_core]], [[STACKS/stack__btree_deep_dive]]
+- 事务线：[[STACKS/stack__tx_mvcc_lock]], [[STACKS/stack__tx_mvcc_impl]]
+
+## 快速入口
+- Reviews：[[REVIEW/review__stack_index_core]], [[REVIEW/review__stack_tx_mvcc_lock]], [[REVIEW/review__stack_tx_mvcc_impl]]
+- Index Q&A：[[QA/index__why_index_exists_but_not_used]], [[QA/index__when_secondary_index_needs_back_to_table]], [[QA/index__how_to_diagnose_slow_sql_index_issue]]
+- Tx Q&A：[[QA/tx__why_rc_and_rr_feel_different]], [[QA/tx__how_to_tell_snapshot_vs_current_read]]
+- B+Tree assets：[[assets/mysql/btree/b_tree.png]], [[assets/mysql/btree/bplus_tree.png]]
+- Experiments / snippets：[[EXP/00_EXP_INDEX]], [[SNIPPETS/00_SNIPPETS_INDEX]]
 
 ## 最小工作流
-1. 选资料：从 [[sources/00_SOURCES_INDEX]] 找到要读的本地来源。
-2. 产出 CARD：参照 [[CARDS/_template]]，用 [[prompts/00_README]] 里的工作流蒸馏短卡。
-3. 入 STACK：把卡片挂到对应的 `Cards` 和 `Read`，保持一页可读。
-4. 可选补充：需要实验或 SQL 模板时，用 [[EXP/00_EXP_INDEX]] / [[SNIPPETS/00_SNIPPETS_INDEX]]。
-5. 生成 REVIEW：为成型主线补对应复习页，例如 [[REVIEW/review__stack_index_core]]，先复习再扩展。
+1. 从 [[sources/00_SOURCES_INDEX]] 或 [[00_INDEX]] 选本地材料。
+2. 用 [[prompts/mysql_distill_doctrine.prompt]] 确认写作边界。
+3. 先补 CARD / STACK，再按需要补 QA 或 REVIEW。
+4. 完成主线后更新 [[00_HOME]], [[00_INDEX]], [[00_LEADER]]。

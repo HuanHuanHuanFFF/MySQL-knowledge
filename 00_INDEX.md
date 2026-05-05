@@ -1,61 +1,95 @@
 # MySQL Vault Index
 
 ## Control
-- [[00_LEADER]] — 当前推进判断、优先级与下游任务 prompt
-- [[00_HOME]] — 入口页与当前 Next Actions
+- 首页入口: [[00_HOME]]
+- 全局目录: [[00_INDEX]]
+- 当前蒸馏进度: [[00_LEADER]]
+- 蒸馏规划 TODO: [[00_TODO]]
 
 ## Stacks
-
-### 基础
-- [[STACKS/stack__sql_basics]] — SQL 基础主线
-- [[STACKS/stack__schema_basics]] — 建表、约束与最小索引
-- [[STACKS/stack__join_core]] — JOIN 基础与常见坑
-- [[STACKS/stack__group_agg]] — GROUP BY、HAVING、条件计数
-
-### 执行流程
-- [[STACKS/stack__select_execution_flow]] — 一条 SELECT 的执行链路
-
-### 索引
-- [[STACKS/stack__index_core]] — 索引概念、使用条件、排查路径
-
-### 事务
-- [[STACKS/stack__tx_mvcc_lock]] — 事务、隔离级别、MVCC / 快照读 / Read View 基础
-- [[STACKS/stack__tx_mvcc_impl]] — MVCC 实现链：undo、版本链、Read View、可见性判断、RC / RR 分叉
+- SQL 基础: [[STACKS/stack__sql_basics]]
+- 建表与约束: [[STACKS/stack__schema_basics]]
+- 多表连接主线: [[STACKS/stack__join_core]]
+- 分组与聚合: [[STACKS/stack__group_agg]]
+- 查询执行流程: [[STACKS/stack__select_execution_flow]]
+- 索引基础主线: [[STACKS/stack__index_core]]
+- B+Tree 深入主线: [[STACKS/stack__btree_deep_dive]]
+- 事务、隔离与锁取舍: [[STACKS/stack__tx_mvcc_lock]]
+- MVCC 实现链: [[STACKS/stack__tx_mvcc_impl]]
 
 ## Reviews
-- [[REVIEW/review__stack_sql_basics]] — SQL 基础复习
-- [[REVIEW/review__stack_schema_basics]] — Schema 复习
-- [[REVIEW/review__stack_join_core]] — JOIN 复习
-- [[REVIEW/review__stack_group_agg]] — 聚合复习
-- [[REVIEW/review__stack_select_execution_flow]] — SELECT 执行流程复习
-- [[REVIEW/review__stack_index_core]] — 索引主线复习
-- [[REVIEW/review__stack_tx_mvcc_lock]] — 事务隔离级别、MVCC 与设计权衡复习
-- [[REVIEW/review__stack_tx_mvcc_impl]] — MVCC 实现链复习
+- [[REVIEW/review__stack_sql_basics]]
+- [[REVIEW/review__stack_schema_basics]]
+- [[REVIEW/review__stack_join_core]]
+- [[REVIEW/review__stack_group_agg]]
+- [[REVIEW/review__stack_select_execution_flow]]
+- [[REVIEW/review__stack_index_core]]
+- [[REVIEW/review__stack_tx_mvcc_lock]]
+- [[REVIEW/review__stack_tx_mvcc_impl]]
+
+## Q&A
+- [[QA/00_QA_INDEX]]
+- [[QA/index__why_index_exists_but_not_used]]
+- [[QA/index__when_secondary_index_needs_back_to_table]]
+- [[QA/index__how_to_diagnose_slow_sql_index_issue]]
+- [[QA/tx__why_not_default_rc_or_serializable]]
+- [[QA/tx__how_to_tell_snapshot_vs_current_read]]
+- [[QA/tx__why_plain_select_should_not_lock]]
+- [[QA/tx__why_rc_and_rr_feel_different]]
 
 ## Prompts
-- [[prompts/init_mysql_distill_leader.prompt]] — 接管当前仓库，盘点进度并产出下游任务 prompt
-- [[prompts/mysql_distill_doctrine.prompt]] — 当前仓库的蒸馏总则
-- [[prompts/00_README]] — 当前 prompt 工作流总说明
-- [[prompts/build_sources_nav.prompt]] — 把资料整理成 sources 导航页
-- [[prompts/build_stack_from_cards.prompt]] — 用现有卡片重编一个 stack
-- [[prompts/make_experiments.prompt]] — 生成可复现实验页
-- [[prompts/make_snippets.prompt]] — 生成 SQL 模板页
-- [[prompts/make_review_page.prompt.md]] — 生成复习提问页
-- [[prompts/update_home_index.prompt]] — 更新首页和总索引
-- [[prompts/PROMPTS 使用说明（给我自己看）]] — prompt 使用备注
-- [[prompts/蒸馏要求]] — 蒸馏写作规则
+- [[prompts/00_README]]
+- 资料导航生成: [[prompts/build_sources_nav.prompt]]
+- 从卡片构建主线: [[prompts/build_stack_from_cards.prompt]]
+- 初始化蒸馏调度页: [[prompts/init_mysql_distill_leader.prompt]]
+- 实验页生成: [[prompts/make_experiments.prompt]]
+- 复习页生成: [[prompts/make_review_page.prompt]]
+- 片段页生成: [[prompts/make_snippets.prompt]]
+- 蒸馏验收审查: [[prompts/mysql_distill_acceptance_review.prompt]]
+- MySQL 蒸馏原则: [[prompts/mysql_distill_doctrine.prompt]]
+- Prompt 使用说明: [[prompts/PROMPTS 使用说明（给我自己看）]]
+- 问题驱动重建主线: [[prompts/rebuild_problem_driven_stack.prompt]]
+- 理解优先学习法: [[prompts/understanding_first_learning.prompt]]
+- 维护首页与总目录: [[prompts/update_home_index.prompt]]
+- 蒸馏要求: [[prompts/蒸馏要求]]
 
 ## Sources
-- [[sources/00_SOURCES_INDEX]] — 本地资料导航入口
+- [[sources/00_SOURCES_INDEX]]
+- [[sources/mysql_manual_links]]
+- [[sources/javaguide_map]]
+- [[sources/reading_queue]]
+- [[sources/refman-8.0-en.pdf]]
+- [[sources/xiaolincoding__mysql__select_execution_flow.html]]
+- [[sources/JavaGuide-mysql/a-thousand-lines-of-mysql-study-notes]]
+- [[sources/JavaGuide-mysql/how-sql-executed-in-mysql]]
+- [[sources/JavaGuide-mysql/index-invalidation-caused-by-implicit-conversion]]
+- [[sources/JavaGuide-mysql/innodb-implementation-of-mvcc]]
+- [[sources/JavaGuide-mysql/mysql-auto-increment-primary-key-continuous]]
+- [[sources/JavaGuide-mysql/mysql-high-performance-optimization-specification-recommendations]]
+- [[sources/JavaGuide-mysql/mysql-index]]
+- [[sources/JavaGuide-mysql/mysql-logs]]
+- [[sources/JavaGuide-mysql/mysql-query-cache]]
+- [[sources/JavaGuide-mysql/mysql-query-execution-plan]]
+- [[sources/JavaGuide-mysql/mysql-questions-01]]
+- [[sources/JavaGuide-mysql/some-thoughts-on-database-storage-time]]
+- [[sources/JavaGuide-mysql/transaction-isolation-level]]
+- [[sources/sql-question/sql-syntax-summary]]
+- [[sources/sql-question/sql-questions-01]]
+- [[sources/sql-question/sql-questions-02]]
+- [[sources/sql-question/sql-questions-03]]
+- [[sources/sql-question/sql-questions-04]]
+- [[sources/sql-question/sql-questions-05]]
 
 ## Templates
-- [[CARDS/_template]] — CARD 模板
-- [[STACKS/_template]] — STACK 模板
-- [[EXP/_template]] — 实验模板
-- [[SNIPPETS/_template]] — SQL 模板
+- [[CARDS/_template]]
+- [[STACKS/_template]]
+- [[QA/_template]]
+- [[EXP/_template]]
+- [[SNIPPETS/_template]]
 
-## Workspaces
-- [[00_LEADER]] — 当前推进判断、优先级与下游任务 prompt
-- [[QA/00_QA_INDEX]] — 问题驱动阅读入口
-- [[EXP/00_EXP_INDEX]] — 实验入口页
-- [[SNIPPETS/00_SNIPPETS_INDEX]] — 模板入口页
+## Assets
+- B+Tree 图片: [[assets/mysql/btree/b_tree.png]], [[assets/mysql/btree/bplus_tree.png]]
+- JavaGuide redo log 图片: [[sources/JavaGuide-mysql/images/redo-log.png]]
+- JavaGuide MVCC 图片目录: `sources/JavaGuide-mysql/images/mvvc/`
+- 实验入口: [[EXP/00_EXP_INDEX]]
+- SQL 片段入口: [[SNIPPETS/00_SNIPPETS_INDEX]]
