@@ -2,6 +2,9 @@
 
 Scope: 不先背名词，而是先追几个真实问题，再顺着设计目标、实现机制、边界与取舍往下读。
 
+## Read First
+- [[STACKS/stack__transaction_basics]]
+
 ## Core Model
 - [[CARDS/tx__what_is_isolation_level.md]]
 - [[CARDS/tx__what_is_mvcc.md]]
