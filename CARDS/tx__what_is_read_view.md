@@ -17,7 +17,6 @@ evidence: ""
 
 Example: 某行的最新版本如果来自你建视图时仍活跃的事务，这个版本对当前一致性读就通常不可见。
 
-Up: [[STACKS/stack__tx_mvcc_lock]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: Consistent Nonlocking Reads)

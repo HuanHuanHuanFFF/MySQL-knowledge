@@ -3,7 +3,8 @@
 Use these prompts with Cursor/Codex to batch-generate MySQL cards, stacks, experiments, and snippets.
 
 ## Card linking rules (global, mandatory)
-- Each CARD has exactly one `Up` via `stack:` front matter pointing to its owning STACK.
+- Each CARD declares its owning STACK only via `stack:` front matter.
+- Do not add `Up:` lines in the card body; they duplicate `stack:` and make card style inconsistent.
 - `related` is optional (<=3). Only add when strong and necessary: relation types are Prereq, Next, Compare, Expand, Example.
 - Multi-linking lives mainly in STACKS for directory/chapters; CARD-to-CARD links only when understanding would break without them.
 - Avoid fully connected meshes; prefer tree/chain structures; mark relation type in each `related` item.

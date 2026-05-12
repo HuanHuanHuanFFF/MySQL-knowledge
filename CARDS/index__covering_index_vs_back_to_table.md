@@ -1,7 +1,7 @@
 ---
 type: mysql-card
 tags: [mysql]
-Up: "[[STACKS/stack__index_core]]"
+stack: "[[STACKS/stack__index_core]]"
 evidence: "sources/refman-8.0-en.pdf (chapter: 8.3.1 B-Tree Index Characteristics; 8.3.12 Index Condition Pushdown)"
 ---
 

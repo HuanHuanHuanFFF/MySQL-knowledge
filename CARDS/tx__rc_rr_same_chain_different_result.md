@@ -23,7 +23,6 @@ Notes:
 
 Example: “同一条链、不同视图、停在不同版本” 才是 RC / RR 在实现层真正分叉的地方。
 
-Up: [[STACKS/stack__tx_mvcc_impl]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: 17.7.2.1 Transaction Isolation Levels; 17.7.2.3 Consistent Nonlocking Reads)

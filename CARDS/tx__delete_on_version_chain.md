@@ -21,7 +21,6 @@ Notes:
 
 Example: 一行刚被别的事务删掉，对你当前一致性读不可见时，数据库仍可能沿链回到“删除前”的旧版本。
 
-Up: [[STACKS/stack__tx_mvcc_impl]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: InnoDB Multi-Versioning)

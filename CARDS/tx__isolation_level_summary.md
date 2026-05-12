@@ -25,7 +25,6 @@ Notes:
 - RR：一致性读更稳定；当前读再配合更保守的锁语义。
 - Serializable：结果最稳，但等待和并发代价最大。
 
-Up: [[STACKS/stack__tx_mvcc_lock]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: 17.7.2.1 Transaction Isolation Levels; 17.7.2.3 Consistent Nonlocking Reads)

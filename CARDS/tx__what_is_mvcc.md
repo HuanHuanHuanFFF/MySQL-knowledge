@@ -17,7 +17,6 @@ evidence: ""
 
 Example: 别的事务刚更新一行但还没轮到你可见时，你的普通 `SELECT` 仍可能读到旧版本。
 
-Up: [[STACKS/stack__tx_mvcc_lock]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: InnoDB Multi-Versioning; Consistent Nonlocking Reads)

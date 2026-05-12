@@ -22,7 +22,6 @@ Notes:
 
 Example: 新插入一行时，别的事务通常只是“看不见这行”；把一行从 `v1` 改成 `v2` 时，别的事务却可能还要看到旧的 `v1`。
 
-Up: [[STACKS/stack__tx_mvcc_impl]]
 
 Refs:
 - sources/JavaGuide-mysql/mysql-logs.md

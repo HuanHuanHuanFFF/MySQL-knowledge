@@ -17,7 +17,6 @@ evidence: ""
 
 Example: 读多写少场景里，普通 `SELECT` 仍可走快照读；但写冲突高时，RR 又会比 RC 承担更保守的锁代价。
 
-Up: [[STACKS/stack__tx_mvcc_lock]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: 17.7.2.1 Transaction Isolation Levels; 17.7.2.3 Consistent Nonlocking Reads)

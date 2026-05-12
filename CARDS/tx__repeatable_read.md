@@ -17,7 +17,6 @@ evidence: ""
 
 Example: 同一事务里反复读取同一行，除非是自己改的，否则结果应保持一致。
 
-Up: [[STACKS/stack__tx_mvcc_lock]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: 17.7.2.1 Transaction Isolation Levels; 17.7.2.3 Consistent Nonlocking Reads)

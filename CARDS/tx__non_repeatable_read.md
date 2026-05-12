@@ -16,7 +16,6 @@ evidence: ""
 
 Example: T1 先读 `A=20`；T2 提交后改成 `A=19`；T1 再读同一行时看到 19。
 
-Up: [[STACKS/stack__tx_mvcc_lock]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: glossary, non-repeatable read)

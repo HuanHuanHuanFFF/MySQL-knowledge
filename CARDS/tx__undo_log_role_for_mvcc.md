@@ -21,7 +21,6 @@ Notes:
 
 Example: 某行的最新版本对当前视图不成立时，一致性读就可能退回到 `undo log` 里的旧版本继续判断。
 
-Up: [[STACKS/stack__tx_mvcc_impl]]
 
 Refs:
 - sources/JavaGuide-mysql/mysql-logs.md

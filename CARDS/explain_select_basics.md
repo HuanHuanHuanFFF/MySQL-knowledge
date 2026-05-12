@@ -1,7 +1,7 @@
 ---
 type: mysql-card
 tags: [mysql]
-Up: "[[STACKS/stack__index_core]]"
+stack: "[[STACKS/stack__index_core]]"
 related:
   - "Prereq: [[CARDS/show_metadata_basics.md]]"
 evidence: "sources/refman-8.0-en.pdf (chapter: 8.8.1 Using EXPLAIN)"

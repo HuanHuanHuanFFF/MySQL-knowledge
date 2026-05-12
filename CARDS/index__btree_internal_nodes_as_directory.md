@@ -1,7 +1,7 @@
 ---
 type: mysql-card
 tags: [mysql]
-Up: "[[STACKS/stack__btree_deep_dive]]"
+stack: "[[STACKS/stack__btree_deep_dive]]"
 related:
   - "Prereq: [[CARDS/index__btree_overview_shape]]"
   - "Next: [[CARDS/index__btree_leaf_nodes_hold_entries]]"

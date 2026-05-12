@@ -1,7 +1,7 @@
 ---
 type: mysql-card
 tags: [mysql]
-Up: "[[STACKS/stack__index_core]]"
+stack: "[[STACKS/stack__index_core]]"
 related:
   - "Prereq: [[CARDS/ddl_alter_table_common.md]]"
 evidence: "sources/refman-8.0-en.pdf (chapter: 13.1.15 CREATE INDEX; 13.1.9 DROP INDEX)"

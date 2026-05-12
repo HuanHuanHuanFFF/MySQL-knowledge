@@ -16,7 +16,6 @@ evidence: ""
 
 Example: 同样的范围查询与插入/更新并发时，更容易出现等待，而不是各自继续推进。
 
-Up: [[STACKS/stack__tx_mvcc_lock]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: 17.7.2.1 Transaction Isolation Levels)

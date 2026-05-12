@@ -21,7 +21,6 @@ Notes:
 
 Example: 一行先后变成 `v3 -> v2 -> v1`，一致性读若看不到 `v3`，就能继续退到 `v2`，再不行再退到 `v1`。
 
-Up: [[STACKS/stack__tx_mvcc_impl]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: InnoDB Multi-Versioning)

@@ -1,7 +1,7 @@
 ---
 type: mysql-card
 tags: [mysql]
-Up: "[[STACKS/stack__index_core]]"
+stack: "[[STACKS/stack__index_core]]"
 related:
   - "Prereq: [[CARDS/index__full_scan_vs_index_scan.md]]"
   - "Next: [[CARDS/explain_select_basics.md]]"

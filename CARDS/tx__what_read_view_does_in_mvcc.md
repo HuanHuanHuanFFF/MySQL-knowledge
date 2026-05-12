@@ -20,7 +20,6 @@ Notes:
 - 一次一致性读不是凭空判断，而是拿“当前这次读对应的 Read View”去判当前版本是否可见。
 - RC 下通常每次一致性读都会新建 Read View；RR 下通常复用事务第一次一致性读生成的 Read View。
 
-Up: [[STACKS/stack__tx_mvcc_impl]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: 17.7.2.3 Consistent Nonlocking Reads)

@@ -25,7 +25,6 @@ Notes:
 
 Example: 先确定这次读用哪份 `Read View`，再拿当前版本的 `DB_TRX_ID` 去判；若这版不可见，就沿 `DB_ROLL_PTR` 退到上一版继续看。
 
-Up: [[STACKS/stack__tx_mvcc_impl]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: 17.7.2.3 Consistent Nonlocking Reads)

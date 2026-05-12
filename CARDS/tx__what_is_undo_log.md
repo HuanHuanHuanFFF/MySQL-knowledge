@@ -25,7 +25,6 @@ Notes:
 
 Example: 一次 `update` 改了某行后，如果事务回滚，数据库就要借 `undo log` 回到改之前的状态；如果别的事务做快照读还需要旧值，也可能从 `undo log` 里把旧版本重建出来。
 
-Up: [[STACKS/stack__tx_mvcc_impl]]
 
 Refs:
 - sources/JavaGuide-mysql/mysql-logs.md

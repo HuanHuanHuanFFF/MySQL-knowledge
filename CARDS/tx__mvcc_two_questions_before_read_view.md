@@ -19,7 +19,6 @@ Notes:
 - 判断当前版本能不能看，要拿版本作者信息去和 Read View 对照。
 - 当前版本不能看时，要沿着 `undo log` 形成的版本链继续往旧版本找。
 
-Up: [[STACKS/stack__tx_mvcc_impl]]
 
 Refs:
 - sources/JavaGuide-mysql/innodb-implementation-of-mvcc.md

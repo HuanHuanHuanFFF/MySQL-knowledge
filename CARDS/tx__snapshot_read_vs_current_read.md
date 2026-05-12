@@ -17,7 +17,6 @@ evidence: ""
 
 Example: 普通 `SELECT` 更像读快照；`SELECT ... FOR UPDATE` 会读最新版本，并和并发事务发生锁竞争。
 
-Up: [[STACKS/stack__tx_mvcc_lock]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: 17.7.2.3 Consistent Nonlocking Reads; 17.7.2.4 Locking Reads)

@@ -20,7 +20,6 @@ Notes:
 - `DB_ROLL_PTR`：给出回到更老版本的线索，供一致性读继续往旧版本找。
 - `DB_ROW_ID`：按官方口径，它也属于 InnoDB 行记录的隐藏系统列之一；主要用于没有合适主键时的内部 row id / 聚簇索引补位。它不参与 Read View 的可见性判断，也不负责版本回退，所以对 MVCC 不是核心。
 
-Up: [[STACKS/stack__tx_mvcc_impl]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: InnoDB Multi-Versioning)

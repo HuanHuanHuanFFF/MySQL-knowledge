@@ -21,7 +21,6 @@ Notes:
 - 事后恢复：像备份后按日志恢复这类，通常不走这条普通 `undo` / MVCC 主线。
 - 后面提“回退版本”，只指一致性读沿版本链找旧版本，不是事务 `ROLLBACK`。
 
-Up: [[STACKS/stack__tx_mvcc_impl]]
 
 Refs:
 - sources/JavaGuide-mysql/mysql-logs.md

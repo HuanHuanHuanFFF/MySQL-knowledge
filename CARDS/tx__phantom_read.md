@@ -16,7 +16,6 @@ evidence: ""
 
 Example: 第一次查 `salary=500` 有 1 行；别的事务插入并提交后，再查变成 2 行。
 
-Up: [[STACKS/stack__tx_mvcc_lock]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: glossary, phantom read)

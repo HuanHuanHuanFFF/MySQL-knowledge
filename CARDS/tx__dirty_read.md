@@ -16,7 +16,6 @@ evidence: ""
 
 Example: T1 `UPDATE balance=90` 未提交，T2 读到 90；随后 T1 回滚，真实值仍是 100。
 
-Up: [[STACKS/stack__tx_mvcc_lock]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: glossary, dirty read)

@@ -16,7 +16,6 @@ evidence: ""
 
 Example: `SELECT @@transaction_isolation;` 在 MySQL 8.0+ 可查看当前会话隔离级别。
 
-Up: [[STACKS/stack__tx_mvcc_lock]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: 17.7.2.1 Transaction Isolation Levels; transaction_isolation variable)

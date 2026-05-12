@@ -1,7 +1,7 @@
 ---
 type: mysql-card
 tags: [mysql]
-Up: "[[STACKS/stack__index_core]]"
+stack: "[[STACKS/stack__index_core]]"
 related:
   - "Prereq: [[CARDS/update_with_where_basics.md]]"
 evidence: "sources/refman-8.0-en.pdf (chapter: 8.2.2 Optimizing UPDATE Statements); sources/JavaGuide-mysql/mysql-query-execution-plan.md"

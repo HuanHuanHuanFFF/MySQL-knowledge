@@ -20,7 +20,6 @@ Notes:
 
 Example: 事务 T1 把某行从 `v1` 改到 `v2` 并提交后，如果还有老事务的快照读可能要看到 `v1`，那条 `update undo` 还不能清；等这些老事务都结束后，`purge` 才能把它处理掉。
 
-Up: [[tx__what_is_undo_log]]
 
 Refs:
 - sources/JavaGuide-mysql/mysql-logs.md

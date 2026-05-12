@@ -1,7 +1,7 @@
 ---
 type: mysql-card
 tags: [mysql]
-Up: "[[STACKS/stack__index_core]]"
+stack: "[[STACKS/stack__index_core]]"
 evidence: "sources/refman-8.0-en.pdf (chapter: 8.3.2 Primary Key Optimization; 15.6.2.1 Clustered and Secondary Indexes)"
 ---
 

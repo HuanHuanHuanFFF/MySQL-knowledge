@@ -1,7 +1,7 @@
 ---
 type: mysql-card
 tags: [mysql]
-Up: "[[STACKS/stack__btree_deep_dive]]"
+stack: "[[STACKS/stack__btree_deep_dive]]"
 related:
   - "Next: [[CARDS/index__btree_node_as_page]]"
 evidence: "sources/JavaGuide-mysql/mysql-logs.md (keywords: 数据页; 16KB); sources/refman-8.0-en.pdf (glossary: page)"

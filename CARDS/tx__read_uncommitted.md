@@ -16,7 +16,6 @@ evidence: ""
 
 Example: 事务 A 尚未提交的更新，事务 B 在这个级别下就可能直接读到。
 
-Up: [[STACKS/stack__tx_mvcc_lock]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: 17.7.2.1 Transaction Isolation Levels)

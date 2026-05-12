@@ -22,7 +22,6 @@ Notes:
 
 Example: 你在事务里先 `update` 一行，再 `select` 同一行，读到自己刚写的值并不违背一致性读规则。
 
-Up: [[STACKS/stack__tx_mvcc_impl]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: 17.7.2.3 Consistent Nonlocking Reads)

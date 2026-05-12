@@ -17,7 +17,6 @@ evidence: ""
 
 Example: 同一事务两次普通 `SELECT`，RC 可能读到两版已提交数据，RR 通常读到同一版。
 
-Up: [[STACKS/stack__tx_mvcc_lock]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: 17.7.2.3 Consistent Nonlocking Reads)

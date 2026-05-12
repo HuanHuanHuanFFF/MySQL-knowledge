@@ -1,7 +1,7 @@
 ---
 type: mysql-card
 tags: [mysql]
-Up: "[[STACKS/stack__index_core]]"
+stack: "[[STACKS/stack__index_core]]"
 related:
   - "Compare: [[CARDS/like_wildcard_basics.md]]"
 evidence: "sources/JavaGuide-mysql/index-invalidation-caused-by-implicit-conversion.md"

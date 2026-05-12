@@ -1,7 +1,7 @@
 ---
 type: mysql-card
 tags: [mysql]
-Up: "[[STACKS/stack__index_core]]"
+stack: "[[STACKS/stack__index_core]]"
 related:
   - "Next: [[CARDS/index__full_scan_vs_index_scan.md]]"
 evidence: "sources/refman-8.0-en.pdf (chapter: 8.3 Overview of the InnoDB Storage Engine)"

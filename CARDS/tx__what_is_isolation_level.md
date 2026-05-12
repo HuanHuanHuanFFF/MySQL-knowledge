@@ -15,7 +15,6 @@ evidence: ""
 
 Example: 同一事务里前后两次查询，是否必须看到同一结果，取决于隔离级别。
 
-Up: [[STACKS/stack__tx_mvcc_lock]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: 17.7.2.1 Transaction Isolation Levels)

@@ -1,7 +1,7 @@
 ---
 type: mysql-card
 tags: [mysql]
-Up: "[[STACKS/stack__btree_deep_dive]]"
+stack: "[[STACKS/stack__btree_deep_dive]]"
 related:
   - "Prereq: [[CARDS/index__bplus_tree_vs_btree]]"
 evidence: "sources/refman-8.0-en.pdf (chapter: 8.3.1 B-Tree Index Characteristics); sources/JavaGuide-mysql/mysql-index.md (sections: Hash 表; 二叉查找树（BST）; 红黑树; B 树& B+ 树); sources/JavaGuide-mysql/mysql-questions-01.md (sections: 为什么 InnoDB 没有使用哈希作为索引的数据结构？; 为什么 InnoDB 没有使用 B 树作为索引的数据结构？)"

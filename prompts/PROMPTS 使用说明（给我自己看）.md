@@ -7,7 +7,8 @@
 
 ## 卡片规则
 - 每张 CARD：只讲一个点，尽量 ≤ 12 行
-- 每张 CARD 必须有且仅有一个 Up：指向 STACK
+- 每张 CARD 用 front matter 的 `stack:` 指向所属 STACK
+- 正文不要再写 `Up:`，避免和 `stack:` 重复
 - CARD 可选 Evidence：指向 EXP 或 SNIPPETS（最多 1 个）
 - 多链接集中在 STACK：STACK 负责 1→多、排序、嵌入阅读
 

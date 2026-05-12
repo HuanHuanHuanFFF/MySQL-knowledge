@@ -1,7 +1,7 @@
 ---
 type: mysql-card
 tags: [mysql]
-Up: "[[STACKS/stack__btree_deep_dive]]"
+stack: "[[STACKS/stack__btree_deep_dive]]"
 related:
   - "Prereq: [[CARDS/index__btree_page_split_minimal]]"
 evidence: "sources/JavaGuide-mysql/mysql-index.md (sections: B 树& B+ 树; primary key design note); sources/refman-8.0-en.pdf (chapter: 8.3.1 B-Tree Index Characteristics)"

@@ -23,7 +23,6 @@ Notes:
 
 Example: 一个版本先看它落在边界哪一侧；若落在中间，再结合 `m_ids` 判断。
 
-Up: [[STACKS/stack__tx_mvcc_impl]]
 
 Refs:
 - sources/refman-8.0-en.pdf (chapter: 17.7.2.3 Consistent Nonlocking Reads)

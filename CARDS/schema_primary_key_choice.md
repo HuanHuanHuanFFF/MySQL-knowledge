@@ -1,7 +1,7 @@
 ---
 type: mysql-card
 tags: [mysql]
-Up: "[[STACKS/stack__index_core]]"
+stack: "[[STACKS/stack__index_core]]"
 related:
   - "Prereq: [[CARDS/schema_datatype_min_set.md]]"
   - "Next: [[CARDS/schema_auto_increment_notes.md]]"
