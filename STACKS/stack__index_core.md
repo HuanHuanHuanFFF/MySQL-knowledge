@@ -14,10 +14,14 @@ Scope: 索引概念、设计、使用与排查的主线学习路径。
 - [[CARDS/explain_select_basics]]
 - [[CARDS/index__diagnose_path]]
 - [[CARDS/index_create_drop_basics]]
+- 深入：[[STACKS/stack__btree_deep_dive]]
 
 ## Read (embed)
 ![[CARDS/index__what_is_index]]
 ![[CARDS/index__btree_basics]]
+
+深入理解 B+Tree 结构、页、范围扫描、回表与结构对比：[[STACKS/stack__btree_deep_dive]]
+
 ![[CARDS/index__clustered_vs_secondary]]
 ![[CARDS/index__covering_index_vs_back_to_table]]
 ![[CARDS/index__full_scan_vs_index_scan]]
