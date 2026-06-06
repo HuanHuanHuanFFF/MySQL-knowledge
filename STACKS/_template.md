@@ -5,7 +5,7 @@ Scope: <one line on what this stack covers>
 ## Cards
 - [[CARDS/...]]
 - [[CARDS/...]]
-- [[CARDS/...]] (Up from cards should point here)
+- [[CARDS/...]]
 
 ## Read (embed)
 ![[CARDS/...]]

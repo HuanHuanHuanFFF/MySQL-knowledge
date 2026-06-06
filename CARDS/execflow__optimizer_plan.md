@@ -1,7 +1,7 @@
 ---
 type: mysql-card
 tags: [mysql]
-stack: "[[STACKS/stack__index_core]]"
+stack: "[[STACKS/stack__select_execution_flow]]"
 related: []
 evidence: "sources/refman-8.0-en.pdf (chapter: The Optimizer); sources/xiaolincoding__mysql__select_execution_flow.html"
 ---

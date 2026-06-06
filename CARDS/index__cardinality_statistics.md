@@ -1,7 +1,7 @@
 ---
 type: mysql-card
 tags: [mysql]
-stack: "[[STACKS/stack__index_core]]"
+stack: ""
 evidence: "sources/refman-8.0-en.pdf (chapter: 8.9.6 Index Statistics; 8.8.1 Optimizer Statistics)"
 ---
 

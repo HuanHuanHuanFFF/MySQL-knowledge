@@ -5,7 +5,7 @@
 认证、读取并缓存权限，连接超时/并发受 wait_timeout、max_connections 控制，权限变更需重连才生效。
 </details>
 
-See: [[CARDS/execflow__connector_auth.md]]
+See: [[CARDS/execflow__connector_auth]]
 
 ---
 
@@ -14,7 +14,7 @@ See: [[CARDS/execflow__connector_auth.md]]
 8.0 已移除；旧版以 SQL 文本为 key 命中，表更新会使缓存失效。
 </details>
 
-See: [[CARDS/execflow__query_cache_status.md]]
+See: [[CARDS/execflow__query_cache_status]]
 
 ---
 
@@ -23,7 +23,7 @@ See: [[CARDS/execflow__query_cache_status.md]]
 词法/语法分析生成语法树，语法错误此处报；不验证表列存在。
 </details>
 
-See: [[CARDS/execflow__parser_ast.md]]
+See: [[CARDS/execflow__parser_ast]]
 
 ---
 
@@ -32,7 +32,7 @@ See: [[CARDS/execflow__parser_ast.md]]
 检查表/列存在与权限、类型匹配，展开 *，不通过即终止。
 </details>
 
-See: [[CARDS/execflow__preprocessor_checks.md]]
+See: [[CARDS/execflow__preprocessor_checks]]
 
 ---
 
@@ -41,7 +41,7 @@ See: [[CARDS/execflow__preprocessor_checks.md]]
 选择索引、JOIN 顺序与访问方法，输出成本最小的计划。
 </details>
 
-See: [[CARDS/execflow__optimizer_plan.md]]
+See: [[CARDS/execflow__optimizer_plan]]
 
 ---
 
@@ -50,7 +50,7 @@ See: [[CARDS/execflow__optimizer_plan.md]]
 执行器驱动计划调用引擎接口；引擎负责索引/数据存取与缓冲。
 </details>
 
-See: [[CARDS/execflow__executor_engine_boundary.md]]
+See: [[CARDS/execflow__executor_engine_boundary]]
 
 ---
 
@@ -59,7 +59,7 @@ See: [[CARDS/execflow__executor_engine_boundary.md]]
 执行器逐行序列化为协议数据发送，客户端解析，断开则中止传输。
 </details>
 
-See: [[CARDS/execflow__result_return.md]]
+See: [[CARDS/execflow__result_return]]
 
 ---
 
@@ -68,7 +68,7 @@ See: [[CARDS/execflow__result_return.md]]
 SHOW PROCESSLIST 查连接状态；EXPLAIN 查看计划不执行查询。
 </details>
 
-See: [[CARDS/execflow__observability_points.md]]
+See: [[CARDS/execflow__observability_points]]
 
 ---
 
@@ -77,4 +77,4 @@ See: [[CARDS/execflow__observability_points.md]]
 只展示计划未实际执行，执行时可能因统计或参数不同而变化。
 </details>
 
-See: [[CARDS/execflow__explain_not_execution.md]]
+See: [[CARDS/execflow__explain_not_execution]]

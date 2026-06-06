@@ -1,7 +1,7 @@
 ---
 type: mysql-card
 tags: [mysql]
-stack: "[[STACKS/stack__index_core]]"
+stack: "[[STACKS/stack__sql_basics]]"
 related:
   - "Prereq: [[CARDS/schema_primary_key_choice.md]]"
   - "Compare: [[CARDS/schema_unique_constraint.md]]"
