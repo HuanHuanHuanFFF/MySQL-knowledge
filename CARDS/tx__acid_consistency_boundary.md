@@ -14,7 +14,7 @@ evidence: "sources/JavaGuide-mysql/mysql-questions-01.md; sources/JavaGuide-mysq
 
 **Why**: 数据库约束能守住唯一键、外键等结构规则；“这笔钱该不该转”“库存能不能扣”要靠应用把业务规则放进事务边界里。
 
-Notes: 不要把 ACID 里的 C 背成“开了事务就业务一致”。
+Notes: 不要把 ACID 里的 C 背成“开了事务读一致性”。
 
 Refs:
 - sources/JavaGuide-mysql/mysql-questions-01.md (section: ACID)

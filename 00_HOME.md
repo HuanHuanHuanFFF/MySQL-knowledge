@@ -10,17 +10,17 @@
 ## Next
 - 先补 [[STACKS/stack__btree_deep_dive]] 的 review。
 - 再考虑是否开 [[STACKS/stack__index_core]] 之后的 index advanced。
-- 如继续事务线，优先收紧“当前读 / 锁边界”，不要散开到日志总论。
+- 事务基础已闭环；如继续事务线，优先收紧“当前读 / 锁边界”，不要散开到日志总论。
 - 做任何新增蒸馏前，先从 [[00_INDEX]] 确认已有入口和真实文件。
 
 ## 当前核心 Stacks
 - 基础线：[[STACKS/stack__sql_basics]], [[STACKS/stack__schema_basics]], [[STACKS/stack__join_core]], [[STACKS/stack__group_agg]]
 - 执行流程线：[[STACKS/stack__select_execution_flow]]
 - 索引线：[[STACKS/stack__index_core]], [[STACKS/stack__btree_deep_dive]]
-- 事务线：[[STACKS/stack__tx_mvcc_lock]], [[STACKS/stack__tx_mvcc_impl]]
+- 事务线：[[STACKS/stack__transaction_basics]], [[STACKS/stack__tx_mvcc_lock]], [[STACKS/stack__tx_mvcc_impl]]
 
 ## 快速入口
-- Reviews：[[REVIEW/review__stack_index_core]], [[REVIEW/review__stack_tx_mvcc_lock]], [[REVIEW/review__stack_tx_mvcc_impl]]
+- Reviews：[[REVIEW/review__stack_index_core]], [[REVIEW/review__stack_transaction_basics]], [[REVIEW/review__stack_tx_mvcc_lock]], [[REVIEW/review__stack_tx_mvcc_impl]]
 - Index Q&A：[[QA/index__why_index_exists_but_not_used]], [[QA/index__when_secondary_index_needs_back_to_table]], [[QA/index__how_to_diagnose_slow_sql_index_issue]]
 - Tx Q&A：[[QA/tx__why_rc_and_rr_feel_different]], [[QA/tx__how_to_tell_snapshot_vs_current_read]]
 - B+Tree assets：[[assets/mysql/btree/b_tree.png]], [[assets/mysql/btree/bplus_tree.png]]

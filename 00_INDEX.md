@@ -14,6 +14,7 @@
 - 查询执行流程: [[STACKS/stack__select_execution_flow]]
 - 索引基础主线: [[STACKS/stack__index_core]]
 - B+Tree 深入主线: [[STACKS/stack__btree_deep_dive]]
+- 事务基础主线: [[STACKS/stack__transaction_basics]]
 - 事务、隔离与锁取舍: [[STACKS/stack__tx_mvcc_lock]]
 - MVCC 实现链: [[STACKS/stack__tx_mvcc_impl]]
 
@@ -24,6 +25,7 @@
 - [[REVIEW/review__stack_group_agg]]
 - [[REVIEW/review__stack_select_execution_flow]]
 - [[REVIEW/review__stack_index_core]]
+- [[REVIEW/review__stack_transaction_basics]]
 - [[REVIEW/review__stack_tx_mvcc_lock]]
 - [[REVIEW/review__stack_tx_mvcc_impl]]
 
